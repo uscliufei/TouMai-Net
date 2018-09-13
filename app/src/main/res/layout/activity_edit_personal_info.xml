@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.runer.toumai.ui.activity.EditPersonalInfoActivity">
+
+    <include layout="@layout/header_layout"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/common_top_bottom_margin"
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:paddingRight="@dimen/common_left_right_margin"
+                android:paddingTop="@dimen/common_top_bottom_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/header_icon"
+                    android:layout_width="@dimen/common60dp"
+                    android:layout_height="@dimen/common60dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/logo" />
+
+            </RelativeLayout>
+
+            <View style="@style/Divider"></View>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+            <com.runer.toumai.widget.NormalInputEditText
+                android:id="@+id/nick_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:input_type="text"
+                app:left_text="昵称"
+                app:left_text_color="@color/text_color_normal"
+                app:right_hint="请输入昵称"
+                app:right_hint_color="@color/text_color_light"></com.runer.toumai.widget.NormalInputEditText>
+
+            <View style="@style/Divider"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:gravity="center"
+                    android:text="性别"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <RadioGroup
+                    android:id="@+id/sex_radios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/sin_check_selector"
+                        android:drawablePadding="@dimen/common2dp"
+                        android:paddingLeft="@dimen/common_left_right_margin"
+                        android:paddingRight="@dimen/common_left_right_margin"
+                        android:text="男"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <RadioButton
+                        android:id="@+id/female_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/sin_check_selector"
+                        android:drawablePadding="@dimen/common2dp"
+                        android:paddingLeft="@dimen/common_left_right_margin"
+                        android:paddingRight="@dimen/common_left_right_margin"
+                        android:text="女"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="@dimen/text_size_14sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View style="@style/Divider"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/birth_bt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:gravity="center"
+                    android:text="生日"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <TextView
+                    android:id="@+id/birth_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/Divider"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/address_bt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:gravity="center"
+                    android:text="所在地"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </RelativeLayout>
+
+            <View style="@style/Divider"></View>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/common_top_bottom_margin"
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:paddingRight="@dimen/common_left_right_margin"
+                android:paddingTop="@dimen/common_top_bottom_margin">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="简介"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <EditText
+                    android:id="@+id/summary_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:background="@color/white"
+                    android:gravity="left|top"
+                    android:hint="请输入您的简介"
+                    android:minHeight="@dimen/common100dp"
+                    android:textColor="@color/text_color_normal"
+                    android:textColorHint="@color/text_color_light"
+                    android:textSize="@dimen/text_size_14sp" />
+
+
+            </LinearLayout>
+
+            <View style="@style/Divider"></View>
+
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/common_top_bottom_margin"
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:paddingRight="@dimen/common_left_right_margin"
+                android:paddingTop="@dimen/common_top_bottom_margin">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="官方认证"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common6dp"
+                    android:layout_marginRight="@dimen/common_left_right_margin"
+                    android:minHeight="@dimen/common40dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/auth_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|top"
+                        android:background="@color/white"
+                        android:hint="填写认证信息"
+                        android:padding="@dimen/common6dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textColorHint="@color/text_color_light"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/authentication_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                        android:layout_marginTop="@dimen/common_top_bottom_margin"
+                        android:text="官方认证信息需等待平台审核,审核通过才予以显示"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View style="@style/Divider"></View>
+
+
+            <TextView
+                android:id="@+id/commit_bt"
+                style="@style/normal_bt_style"
+                android:layout_marginBottom="@dimen/common20dp"
+                android:layout_marginTop="@dimen/common20dp"
+                android:text="确认修改"></TextView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

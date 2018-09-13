@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="20"
+        android:layout_width="match_parent"
+        android:layout_height="24dp">
+        <View style="@style/VerticalDivider" ></View>
+
+        <TextView
+            android:id="@+id/offer_id"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_10sp"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/common4dp"
+            android:layout_height="match_parent" />
+        <View style="@style/VerticalDivider" ></View>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_10sp"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/common4dp"
+            android:layout_height="match_parent" />
+        <View style="@style/VerticalDivider" ></View>
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:background="@color/white"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_10sp"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/common4dp"
+            android:layout_height="match_parent" />
+        <View style="@style/VerticalDivider"></View>
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/common4dp"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_10sp" />
+
+        <View style="@style/VerticalDivider" ></View>
+        <TextView
+            android:id="@+id/create_time"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_10sp"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/common4dp"
+            android:layout_height="match_parent" />
+
+        <View style="@style/VerticalDivider" ></View>
+    </LinearLayout>
+
+</LinearLayout>

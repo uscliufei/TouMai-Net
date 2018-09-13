@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tag_bg_shape"
+    android:paddingTop="@dimen/common4dp"
+    android:paddingBottom="@dimen/common4dp"
+    android:paddingLeft="@dimen/common6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tagname"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_14sp"
+        android:paddingBottom="@dimen/common4dp"
+        android:paddingTop="@dimen/common4dp"
+        android:layout_width="wrap_content"
+        android:text="今天是个好天气"
+        android:layout_marginRight="@dimen/common6dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:paddingLeft="@dimen/common6dp"
+        android:paddingRight="@dimen/common6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/common6dp"
+        android:paddingBottom="@dimen/common6dp"
+        android:src="@drawable/delete"
+        />
+
+</LinearLayout>

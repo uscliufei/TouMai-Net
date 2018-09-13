@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.runer.toumai.ui.activity.AddressEditActivity">
+
+    <include
+        layout="@layout/header_layout"
+        ></include>
+
+
+    <View style="@style/Divider" android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+    <com.runer.toumai.widget.NormalInputEditText
+        app:input_type="text"
+        android:id="@+id/name"
+        app:left_text="收货人"
+        app:right_hint="请输入收货人"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.runer.toumai.widget.NormalInputEditText>
+
+    <com.runer.toumai.widget.NormalInputEditText
+        app:input_type="num"
+        app:left_text="手机号"
+        android:id="@+id/phone"
+        app:right_hint="请输入收货人手机号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.runer.toumai.widget.NormalInputEditText>
+
+    <RelativeLayout
+        android:id="@+id/address_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common46dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:gravity="center"
+            android:text="所在地"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_left_right_margin"
+            android:gravity="center"
+            android:text="选择地区"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_12sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/Divider"></View>
+    <com.runer.toumai.widget.NormalInputEditText
+        android:id="@+id/address_detail_input"
+        app:input_type="text"
+        app:left_text="详细地址"
+        app:right_hint="请输入地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.runer.toumai.widget.NormalInputEditText>
+
+
+    <CheckBox
+        android:layout_marginTop="@dimen/common_top_bottom_margin"
+        android:layout_marginBottom="@dimen/common_top_bottom_margin"
+        android:id="@+id/default_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置为默认收货地址"
+        android:drawableLeft="@drawable/pay_selector"
+        android:button="@null"
+        android:textSize="@dimen/text_size_14sp"
+        android:textColor="@color/text_color_normal"
+        android:drawablePadding="@dimen/common6dp"
+        />
+
+    <TextView
+        android:id="@+id/commit_bt"
+        style="@style/normal_bt_style"
+        android:text="保存"
+        ></TextView>
+
+</LinearLayout>

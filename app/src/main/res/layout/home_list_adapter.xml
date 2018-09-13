@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/common_top_bottom_margin"
+    android:paddingBottom="@dimen/common_top_bottom_margin"
+    android:background="@drawable/white_press_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginLeft="@dimen/common_left_right_margin"
+        android:layout_width="@dimen/common110dp"
+        android:layout_height="@dimen/common110dp"
+        android:src="@drawable/empty_img" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common110dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_left_right_margin">
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/normal_text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common0dp"
+            android:layout_marginRight="@dimen/common0dp"
+            android:paddingRight="@dimen/common_left_right_margin"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common2dp">
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/state_shape"
+                android:paddingBottom="@dimen/common4dp"
+                android:paddingLeft="@dimen/common6dp"
+                android:paddingRight="@dimen/common6dp"
+                android:paddingTop="@dimen/common4dp"
+                android:text="降价"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10sp" />
+
+           <LinearLayout
+               android:gravity="center_vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/left_time"
+                   android:visibility="visible"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/common6dp"
+                   android:textColor="@color/text_color_gray"
+                   android:textSize="@dimen/text_size_12sp" />
+               <cn.iwgang.countdownview.CountdownView
+                   android:id="@+id/count_down_view"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/common30dp"
+                   app:isHideTimeBackground="true"
+                   app:isShowDay="true"
+                   app:isShowHour="true"
+                   app:isShowMinute="true"
+                   app:isShowSecond="true"
+                   android:layout_marginLeft="@dimen/common2dp"
+                   app:isShowMillisecond="false"
+                   app:timeTextColor="@color/text_color_gray"
+                   app:timeTextSize="12sp"
+                   app:isTimeTextBold="false"
+                   app:suffixGravity="center"
+                   app:suffixTextColor="@color/text_color_light"
+                   app:suffixTextSize="12sp"
+                   app:suffixHour="小时"
+                   app:suffixDay="天"
+                   app:suffixMinute="分"
+                   app:suffixSecond="秒"
+                   app:suffixMillisecond="毫秒" />
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:id="@+id/dijia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common2dp"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前价"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/current_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common2dp"
+                    android:drawablePadding="@dimen/common4dp"
+                    android:drawableLeft="@drawable/paimai"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/bt"
+                style="@style/normal_bt_style"
+                android:layout_width="@dimen/common70dp"
+                android:layout_height="@dimen/common32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="马上投买"
+                android:textSize="@dimen/text_size_14sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

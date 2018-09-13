@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.runer.liabary.swipelayout.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_layout"
+    android:background="@drawable/white_press_bg"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_marginLeft="@dimen/common_left_right_margin"
+                android:layout_marginTop="@dimen/common_top_bottom_margin"
+                android:layout_width="@dimen/common80dp"
+                android:layout_height="@dimen/common80dp"
+                android:src="@drawable/header"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/common6dp"
+                android:layout_marginTop="@dimen/common_top_bottom_margin"
+                android:layout_marginRight="@dimen/common_left_right_margin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:text="我发生的房价开始对方进fsdfsdfsfsdfsdfsdffsdf度fdsfsfsdffsdfsdfsdfsdf款说的"
+                    style="@style/normal_text_view_title"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/common4dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/normal_text_view_content"
+                        android:layout_width="wrap_content"
+                        android:text="底价:"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:textColor="@color/text_color_light"
+                        android:layout_marginRight="@dimen/common0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/low_price"
+                        style="@style/normal_text_view_content"
+                        android:layout_width="wrap_content"
+                        android:text="￥9090"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/common4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:text="当前价:"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:textColor="@color/text_color_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/current_price"
+                        android:text="￥909090"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:textColor="@color/theme_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/common10dp"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:textColor="@color/text_color_light"
+                        android:layout_width="wrap_content"
+                        android:text="出价"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/price_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="63"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:textSize="@dimen/text_size_12sp"
+                        android:textColor="@color/text_color_light"
+                        android:layout_width="wrap_content"
+                        android:text="次"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/publish_time"
+                    android:layout_marginTop="@dimen/common4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="发布时间：2019/09/09 13:14"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/left_time"
+                    android:layout_marginTop="@dimen/common6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="剩余20小时55分"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/text_size_14sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider" android:layout_marginTop="@dimen/common10dp"></View>
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ming_bt"
+                style="@style/normal_bt_style"
+                android:text="明价"
+                android:layout_width="@dimen/common80dp"
+                android:layout_height="@dimen/common32dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_marginTop="@dimen/common10dp"
+                android:layout_marginBottom="@dimen/common10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/delete_bt"
+        android:background="@color/text_color_red"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_18sp"
+        android:layout_width="@dimen/common80dp"
+        android:layout_height="match_parent" />
+
+</com.runer.liabary.swipelayout.SwipeMenuLayout>

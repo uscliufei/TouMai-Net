@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:weightSum="10"
+        android:paddingTop="@dimen/common6dp"
+        android:paddingBottom="@dimen/common6dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="@dimen/common30dp"
+            android:background="@drawable/search_bg"
+            android:layout_marginRight="@dimen/common_left_right_margin"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/common_left_right_margin"
+                android:src="@drawable/home_search"/>
+            <EditText
+                android:id="@+id/searchEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="商品标题"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/text_size_16sp"
+                android:imeOptions="actionSearch"
+                android:imeActionLabel="搜索"
+                android:singleLine="true"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="4"
+            android:id="@+id/type"
+            android:text="全部"
+            android:textColor="@color/text_color_orange"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_stickynavlayout_innerscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</LinearLayout>

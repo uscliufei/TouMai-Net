@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/common70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:src="@drawable/app_logo" />
+
+        <RelativeLayout
+            android:id="@+id/user_liner"
+            android:layout_width="@dimen/common70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/reg_log_bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="注册/登录"
+                android:textColor="@color/text_color_normal"
+                android:visibility="visible" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/header_icon"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/common40dp"
+                android:layout_height="@dimen/common40dp"
+                android:paddingBottom="@dimen/common_top_bottom_margin"
+                android:paddingTop="@dimen/common_top_bottom_margin"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/common_top_bottom_margin"
+            android:layout_marginLeft="@dimen/common6dp"
+            android:layout_marginRight="@dimen/common6dp"
+            android:layout_marginTop="@dimen/common_top_bottom_margin"
+            android:layout_toLeftOf="@id/user_liner"
+            android:layout_toRightOf="@id/logo"
+            android:lines="1"
+            android:textSize="@dimen/text_size_12sp"
+            android:background="@drawable/search_home_shape"
+            android:drawableRight="@drawable/home_search"
+            android:gravity="center_vertical"
+            android:padding="@dimen/common6dp"
+            android:text="@string/searh_tip" />
+
+    </RelativeLayout>
+
+    <View style="@style/Divider"></View>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/home_sticky_layout"></include>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

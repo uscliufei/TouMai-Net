@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.runer.toumai.ui.activity.CollectAcitivty">
+
+    <include layout="@layout/header_layout"></include>
+
+    <com.runer.liabary.tab.CommonTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common46dp"
+        android:background="@color/background"
+        app:tl_divider_color="@color/white"
+        app:tl_divider_padding="@dimen/common4dp"
+        app:tl_divider_width="1px"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="@color/transparent_normal"
+        app:tl_indicator_width="70dp"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_tab_space_equal="true"
+        app:tl_textBold="BOTH"
+        app:tl_textsize="14sp"
+        app:tl_textUnselectColor="@color/text_color_normal"
+        app:tl_textSelectColor="@color/text_color_orange"
+        app:tl_underline_color="@color/transparent_normal"
+        app:tl_underline_height="1dp"></com.runer.liabary.tab.CommonTabLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/common16dp"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_marginRight="@dimen/common_left_right_margin"
+            android:layout_marginTop="@dimen/common4dp"
+            android:text="感谢放暑假电缆附件第三方了放声大哭法律手段客服老师的方法数代理费开始懂了"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_12sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/normal_text_view_content"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_marginTop="@dimen/common4dp"
+            android:text="2019/09/12 16:20:08"
+            android:layout_marginBottom="@dimen/common20dp"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_10sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_marginLeft="@dimen/common13dp"
+        android:layout_width="1px"
+        android:layout_alignTop="@id/container"
+        android:layout_alignBottom="@id/container"
+        android:layout_height="match_parent"
+        android:background="@color/text_color_light"></View>
+
+
+    <ImageView
+        android:layout_marginLeft="@dimen/common10dp"
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_cirle"  />
+
+
+
+</RelativeLayout>

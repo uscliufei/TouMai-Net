@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingLeft="@dimen/common4dp"
+        android:paddingRight="@dimen/common4dp"
+        android:text="私信"
+        android:background="@drawable/tag_bg_shape"
+        android:textColor="@color/text_color_orange"
+        android:textSize="@dimen/text_size_12sp"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>

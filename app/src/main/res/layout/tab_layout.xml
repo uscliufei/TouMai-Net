@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.runer.liabary.tab.SlidingTabLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common46dp"
+    android:background="@color/background"
+    app:tl_iconVisible="false"
+    app:tl_indicator_color="@color/theme_color"
+    app:tl_indicator_corner_radius="@dimen/common2dp"
+    app:tl_indicator_width="70dp"
+    app:tl_indicator_width_equal_title="true"
+    app:tl_tab_space_equal="true"
+    app:tl_textBold="BOTH"
+    app:tl_textSelectColor="@color/theme_color"
+    app:tl_textUnselectColor="#66000000"
+    app:tl_textsize="14sp"
+    app:tl_underline_color="@color/divider"
+    app:tl_underline_height="1px"
+   >
+
+</com.runer.liabary.tab.SlidingTabLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    tools:context="com.runer.toumai.ui.activity.SuccessfulBidActivity">
+
+    <include
+        layout="@layout/header_layout"
+        ></include>
+    <ImageView
+        android:layout_marginTop="@dimen/common80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chujia_successful"
+        />
+    <TextView
+        android:id="@+id/tips"
+        android:layout_marginTop="@dimen/common_left_right_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜，出价成功"
+        android:textSize="@dimen/text_size_16sp"
+        android:textColor="@color/text_color_gray"
+        />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/publis_success_tips"
+        android:layout_marginTop="@dimen/common_left_right_margin"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/common_left_right_margin"
+        android:paddingRight="@dimen/common_left_right_margin"
+        android:layout_height="wrap_content"
+        android:text="@string/publis_success_tips"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即分享给朋友"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/text_size_14sp"
+        android:layout_marginTop="@dimen/common80dp"
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/common20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:id="@+id/wechat_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/wechat"
+            android:text="微信"
+            android:drawablePadding="@dimen/common6dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:gravity="center"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginLeft="@dimen/common_top_bottom_margin"
+            android:layout_marginRight="@dimen/common_top_bottom_margin"
+            />
+        <TextView
+            android:id="@+id/wechat_circle_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/wechat_circle"
+            android:text="朋友圈"
+            android:drawablePadding="@dimen/common6dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:gravity="center"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginLeft="@dimen/common_top_bottom_margin"
+            android:layout_marginRight="@dimen/common_top_bottom_margin"
+            />
+
+        <TextView
+            android:id="@+id/qq_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qq"
+            android:text="QQ"
+            android:gravity="center"
+            android:drawablePadding="@dimen/common6dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginLeft="@dimen/common_top_bottom_margin"
+            android:layout_marginRight="@dimen/common_top_bottom_margin"
+            />
+        <TextView
+            android:id="@+id/qq_zone_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qqzone"
+            android:text="QQ空间"
+            android:gravity="center"
+            android:drawablePadding="@dimen/common6dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginLeft="@dimen/common_top_bottom_margin"
+            android:layout_marginRight="@dimen/common_top_bottom_margin"
+            />
+
+
+        <TextView
+            android:id="@+id/sina_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sina"
+            android:text="微博"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/common_top_bottom_margin"
+            android:layout_marginRight="@dimen/common_top_bottom_margin"
+            android:drawablePadding="@dimen/common6dp"
+            android:textSize="@dimen/text_size_14sp"
+            android:textColor="@color/text_color_gray"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

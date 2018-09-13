@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common20dp"
+        android:background="@drawable/dialog_bg_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:background="@drawable/dialog_header_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:text="加一手出价"
+                android:textColor="@color/text_color_orange"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/common_left_right_margin"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bottom_shape"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/common_left_right_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common3dp"
+                    android:src="@drawable/tips" />
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common2dp"
+                    android:text="规则提示："
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_top_bottom_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginTop="@dimen/common_top_bottom_margin"
+                    android:paddingLeft="@dimen/common2dp"
+                    android:text="加一手出价"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginTop="@dimen/common_top_bottom_margin"
+                    android:paddingLeft="@dimen/common2dp"
+                    android:textColor="@color/text_color_orange"
+                    android:textSize="@dimen/text_size_18sp" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/pay_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common4dp"
+                android:layout_marginBottom="@dimen/common2dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_marginRight="@dimen/common6dp"
+                    android:text="支付方式"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioButton
+                    android:id="@+id/all_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common10dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sin_check_selector"
+                    android:drawablePadding="@dimen/common4dp"
+                    android:text="全额支付"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+                <RadioButton
+                    android:id="@+id/over_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common10dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sin_check_selector"
+                    android:drawablePadding="@dimen/common4dp"
+                    android:text="溢价支付"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:id="@+id/faq_bt"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/faq"
+                    android:visibility="gone"
+                    />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common20dp"
+                android:layout_marginLeft="@dimen/common_left_right_margin"
+                android:layout_marginTop="@dimen/common10dp">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/rule_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/sin_check_selector"
+                    android:drawablePadding="@dimen/common4dp"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <com.runer.liabary.widget.ColorTextView
+                    android:id="@+id/rules"
+                    app:color_texts="《投买网交易规则》"
+                    app:color_arrays="#ea633d"
+                    android:text="同意《投买网交易规则》"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textColor="@color/text_color_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/anonymous_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sin_check_selector"
+                    android:drawablePadding="@dimen/common4dp"
+                    android:text="匿名出价"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:id="@+id/niming_faq"
+                    android:src="@drawable/faq"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/common_top_bottom_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                style="@style/normal_bt_style"
+                android:layout_width="@dimen/common120dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="@dimen/common16dp"
+                android:text="确定"
+                android:textSize="@dimen/text_size_16sp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

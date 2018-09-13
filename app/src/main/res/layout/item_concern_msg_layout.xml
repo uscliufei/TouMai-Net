@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/white_press_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/header"
+        android:layout_width="@dimen/common40dp"
+        android:src="@drawable/header"
+        android:layout_marginTop="@dimen/common_top_bottom_margin"
+        android:layout_marginLeft="@dimen/common_left_right_margin"
+        android:layout_marginBottom="@dimen/common_top_bottom_margin"
+        android:layout_height="@dimen/common40dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/common_top_bottom_margin"
+        android:layout_marginLeft="@dimen/common6dp"
+        android:layout_marginRight="@dimen/common_left_right_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="发动机康师傅"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/msg_time"
+                style="@style/normal_text_view_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="2019/09/08 14:00"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_size_10sp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common6dp"
+            android:ellipsize="end"
+            android:text="@string/test"
+            android:paddingBottom="@dimen/common_top_bottom_margin"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_size_12sp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

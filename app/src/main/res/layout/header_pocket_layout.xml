@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+
+
+   <LinearLayout
+       android:gravity="center"
+       android:background="@color/theme_color"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/common150dp">
+
+       <TextView
+           android:gravity="center"
+           android:text="口袋金额"
+           android:textColor="@color/white"
+           android:textSize="@dimen/text_size_14sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+
+       <TextView
+           android:id="@+id/balance"
+           android:layout_marginTop="@dimen/common_top_bottom_margin"
+           android:gravity="center"
+           android:textSize="@dimen/text_size_20sp"
+           android:textColor="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+
+   </LinearLayout>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_marginTop="@dimen/common_top_bottom_margin"
+            android:layout_marginBottom="@dimen/common_top_bottom_margin"
+            android:layout_width="@dimen/common2dp"
+            android:layout_height="@dimen/common20dp"
+            android:background="@color/theme_color"
+            ></View>
+
+         <TextView
+             android:layout_marginLeft="@dimen/common4dp"
+             style="@style/normal_text_view_title"
+             android:textSize="@dimen/text_size_14sp"
+             android:text="@string/pocket_info"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

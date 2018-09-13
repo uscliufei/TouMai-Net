@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.runer.toumai.ui.activity.BindPhoneActivity">
+
+    <include
+        layout="@layout/header_layout"
+        ></include>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_phone_num"
+            style="@style/normal_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common46dp"
+            android:layout_marginTop="@dimen/common30dp"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="@dimen/common10dp"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true" />
+        <LinearLayout
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                style="@style/Divider_1dp"
+                android:layout_marginLeft="@dimen/common_left_right_margin"
+                android:layout_marginRight="@dimen/common_left_right_margin"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:weightSum="5">
+
+                <EditText
+                    android:id="@+id/eidt_code"
+                    style="@style/normal_edit_style"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/common46dp"
+                    android:layout_weight="3"
+                    android:drawableLeft="@drawable/code"
+                    android:drawablePadding="@dimen/common10dp"
+                    android:hint="请输入您的验证码"
+                    android:maxLength="11"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <View
+                    style="@style/VerticalDivider"
+                    android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                    android:layout_marginTop="@dimen/common_top_bottom_margin"></View>
+
+                <com.runer.toumai.widget.CodeButton
+                    android:id="@+id/get_code_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/text_color_orange" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="@dimen/common_left_right_margin"></View>
+        <View
+            style="@style/Divider_1dp"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_marginRight="@dimen/common_left_right_margin"></View>
+
+        <TextView
+            android:layout_marginBottom="@dimen/common30dp"
+            android:id="@+id/login_bt"
+            style="@style/normal_bt_style"
+            android:layout_marginTop="@dimen/common30dp"
+            android:text="绑定" />
+    </LinearLayout>
+    </LinearLayout>

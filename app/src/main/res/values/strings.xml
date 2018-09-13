@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">投买网</string>
+    <string name="title_activity_example_acitivty">ExampleAcitivty</string>
+    <string name="advice_notice">请对我们说出您的意见和建议</string>
+    <string name="not_open">功能暂未开通</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="wallet_info">钱包明细</string>
+    <string name="test">fjsdkf附近圣诞快乐放价甩的雷锋精神电缆附件圣诞快乐附近上岛咖啡见识到了荆fjsdkf附近圣诞快乐放价甩的雷锋精神电缆附件圣诞快乐附近上岛咖啡见识到了荆防颗粒圣诞节司法解释对方接口防颗粒圣诞节司法解释对方接口</string>
+    <string name="pocket_info">口袋明细</string>
+    <string name="add_pic_notice">提示：最多上传8张图片</string>
+    <string name="shangpin_miaoshu">请如实、全面、准确的描述商品。更全面的描述有利于买家更全面的了解，有利于卖出更高价哦！描述请务必真实，若因描述失实导致买家申诉，您将须支付“一轮竞价收益”给买家作为违约金并承担商品寄回到付邮费。</string>
+    <string name="check_rules">查看降价规则说明</string>
+    <string name="baoyou_des">(由我（卖家）承担邮费或送货上门或该商品交割无邮费)</string>
+    <string name="no_baoyou">(卖家自取或邮费到付或买家承担费用(成交或与卖家协商))</string>
+    <string name="commit_got_tips">若卖家存在隐藏商品瑕疵或欺诈行为,您可在24小时内提出申诉，平台将介入调查</string>
+    <string name="appeal_tips">卖家存在隐藏商品瑕疵或欺诈行为,买家获得全额退款并获得一手出局收益</string>
+    <string name="trusteeship_tips">当您所托管的金额不足以进行下一轮竞价时，托管金额自动退回其"钱包"</string>
+    <string name="price_tips_add_one_hand">若您是最高出价者,则您将以最高价获得该商品；若有更高出价,您将获得%s元作为竞价收益</string>
+    <string name="over_pay_tips">已有买家出价，若要撤下商品需向买家支付出局收益：￥%s，确定要撤下商品么？</string>
+    <string name="over_pay_no_tips">尚无买家出价，您可以免费撤下商品。确定要撤下商品么？</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="price_show_des">【￥%1$s】%2$s——投买网 · 买着了省钱，没买着赚钱</string>
+    <string name="pay_left_des">确定要为商品：%1$s支付尾款，￥%2$s吗？</string>
+    <string name="start_copyright">©2017   山东五蕴网络科技有限公司</string>
+    <string name="xici_des">[必填]请如实说明商品存在的瑕疵。已声明存在的瑕疵将不被作为买家申诉的理由。若因存在重大瑕疵而未标明导致买家申诉，您将须支付“一轮竞价收益”给买家作为违约金并承担商品寄回到付邮费。</string>
+    <string name="publis_success_tips">立刻分享给朋友吧\n被更多的朋友看到才更有可能找到最识货的买家哦\n更广泛传播=更高的成交率+更快的成交速度+更高的成交价</string>
+    <string name="touamai_jiaoge_des">投买网暂不支持“买家自取”交割方式</string>
+    <string name="publish_price_tips">快把这份喜悦分享给朋友吧!\n如果您看好该商品但并不想得到的话就把这个好东西介绍给更多朋友吧！\n让更喜欢它的朋友捡个漏，您也能更快的获得竞价收益哦！</string>
+    <string name="agree_tran_rules">我同意【0邮费】规则（由我(卖家)承担邮费或送货上门，或该商品为虚拟物品无需交割费用）</string>
+    <string name="tou_ad_des">买着了省钱，没买着赚钱</string>
+    <string name="money">¥</string>
+    <string name="bind_tips">该第三方账号已登录过投买网并创建账号，为防止账号信息出现错误和丢失，您可以直接使用该第三方账号进行登陆，或使用其他第三方账号与本账户绑定。</string>
+    <string name="quankuan_yijia">全款支付的优点：省心、安全、能更快拿到商品（若成为最终买家，则成交后自动立即进入交割程序） 溢价支付的优点：占用资金少（只需支付出价金额高出底价的部分即可）、资金回报率高（当出现更高出价时，与全款支付获得同样的竞价收益） 全款支付的缺点：占用资金多（需全款支付底价和溢价部分）、资金回报率低（当出现更高出价时，与溢价支付获得同样的竞价收益） 溢价支付的缺点：不省心（必须在成交后72小时内支付尾款）、不安全（如果未在成交后72小时内完成尾款支付，则已支付的溢价款将作为违约金赔付给卖家）、拿到商品的速度更慢（完成尾款支付后才会进入交割程序） 所以，全款支付适合以购得商品为目的的买家，溢价支付适合以获取竞价收益为目的的买家。</string>
+    <string name="an_meaning">【问】\n“暗价”是什么意思？\n【答】\n暗价就是在该阶段中所有的出价信息（包括出价人数、出价时间、出价金额等）均不公开。待结束时间到后，再统计所有买家的竞价情况并统一公布。
+</string>
+    <string name="an_reason">【问】\n为什么“暗价”功能需要完成任务才能解锁？\n【答】\n因为“有偿出局”规则不同以往的竞价规则，您需要体验之后才能有更明确和深刻的理解和认识。\n而“暗价”更是一个进阶的功能，如果您尚未有过出价经验和必要的规则学习，更难理解其妙处。\n所以，快去完成任务来解锁这一高级姿势吧！
+</string>
+    <string name="an_cant_add">【问\n“暗价”阶段为什么不能“加一手出价”？\n【答】\n因为，在暗价阶段，只存在底价而不存在当前价（时间结束后才进行统一统计），所以无法根据当前价进行加一手出价。
+</string>
+    <string name="an_yiyi">【问】\n“暗价”的意义是什么？\n【答】\n“暗价”阶段“无当前价”的特征，有利于商品价格快速升至市场普遍认可价格的较高状态，节省了前半段竞价的时间，使得竞价过程更高效。\n同时“大循环式”竞价规则，降低了时间要素的重要性（由定距降为定序），价格随出价人数的增多而增长较慢——出价晚也有机会分一杯羹。增加了用户出价积极性，也降低了商品流拍率。
+</string>
+    <string name="niming_yiyi">选择匿名出价，您的用户名将不在“出价列表”中“出价人”一栏进行显示。\n如果出现某位买家与您反复争夺某件商品，选择匿名出价，也许能降低“缠斗”的可能。
+</string>
+    <string name="xiaci_des">“孤品”往往存在瑕疵或交易风险。我们特地设计这一项目，一是提醒卖家发布商品时做出必要说明，二是提醒买家出价竞买时能充分了解商品的情况。卖家已声明存在的瑕疵将不被作为买家申诉的理由。但若存在重大瑕疵而卖家未标明，买家有权进行申诉。若申诉成功，买家可采用邮费到付方式将商品寄回给卖家并收到卖家赔付的“一轮竞价收益”作为违约金。
+</string>
+    <string name="label_des">投买网不采用“树状结构”商品分类，而是通过“标签”实现商品“网状结构”关联。\n卖家上传商品时可添加若干个标签（与商品相关的关键词）。标签无等级关系、无包含关系，标签间为同级别并列关系。\n买家可通过搜索标签或点击标签（链接）以查看带有某一标签的所有商品的列表。
+</string>
+    <string name="koudai">“口袋”和“钱包”都是用户的资金账户，区别在于“钱包”为用户的储值账户，用户拥有完全的自主支配权，可进行出价或提现；“口袋”为冻结账户，资金并未确定归该用户所有，只是预期收益，用户无法进行支配。当“口袋”中的款项确定无争议后，将转入“钱包”。</string>
+    <string name="cannot_upload_goods_retry">不可重复出售同一商品，请退出重试</string>
+    <string name="faq_url"><![CDATA[http://api.toumai.wang/page.php?type=faq&id=]]></string>
+    <string name="jiang">因为“溢价支付”是只支付出价金额高出底价的部分，但降价阶段的价格是低于底价的，不存在“高出底价的部分”（即“溢价”部分）。
+所以，本来就捡了大便宜，还不赶紧去付款！
+</string>
+    <string name="baozhengjin_rules">“卖家保证金”相关规则</string>
+    <string name="baozhengjin">无法发布商品\n按照“卖家保证金”相关规则，发布商品需要保证钱包余额不低于%s元，请先前往充值</string>
+    <string name="maijiabaozhengjin">“卖家保证金”相关规则</string>
+    <string name="input_withdraw_string">请输入提现金额</string>
+    <string name="wechat_with_draw_tip">提示：微信提现仅支持通过微信充值等额金额的提现，若有通过支付宝充值的金额或竞价收益，建议使用支付宝提现。</string>
+    <string name="with_draw_ok_tips">小河豚已收到您的提现要求！投买网没有 “三个工作日”、“七个工作日”等提现周期限制，小河豚人工验证收款账户的准确性后会立即打款哒。投买网事儿多河豚少，有时不能立即到账，但是小河豚保证24小时内会完成提现哒。您在提现过程中遇到的任何问题，欢迎通过“投买网”微信公众号联系小河豚哟~</string>
+    <string name="appeal_tips_dialog_text">发起申诉即由平台介入调查和判定，适用于商品描述不实或其他严重的卖家不诚信行为。如情况不严重，建议先与卖家私信沟通或通过“投买网”微信公众号与平台工作人员沟通；如果商品存在明显瑕疵或您的权益受到侵害，可通过申诉召唤平台介入调查，我们将维护投买网用户权益不受损失。</string>
+    <string name="searh_tip">输入关键词搜索商品、标签或用户</string>
+    <string name="connect_kefu_tips">您在使用投买网的过程中遇到任何问题，欢迎通过“投买网”微信公众号联系小河豚哟~</string>
+    <string name="got_out_tips">以一口价买断，即不再进行竞价流程，点击“确认”按钮后立即以一口价成交。</string>
+    <string name="pass_reg">请输入6-20位任意字符密码</string>
+</resources>

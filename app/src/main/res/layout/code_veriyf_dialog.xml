@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/common20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:background="@drawable/dialog_header_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:text="验证码验证"
+                android:textColor="@color/text_color_orange"
+                android:textSize="@dimen/text_size_16sp" />
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/common_left_right_margin"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bottom_shape"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/common_left_right_margin">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/common16dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <test.jinesh.captchaimageviewlib.CaptchaImageView
+                    android:layout_width="@dimen/common200dp"
+                    android:id="@+id/image"
+                    android:layout_margin="5dp"
+                    android:layout_height="50dp"
+                    />
+
+                <TextView
+                    android:id="@+id/chage_code_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="换一张"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:padding="@dimen/common4dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/common_top_bottom_margin"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common2dp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:text="验证码"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <EditText
+                    android:id="@+id/code_input"
+                    android:hint="输入验证码"
+                    android:paddingLeft="@dimen/common4dp"
+                    android:paddingRight="@dimen/common4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:layout_marginTop="@dimen/common4dp"
+                    android:layout_marginBottom="@dimen/common4dp"
+                    android:height="@dimen/common30dp"
+                    android:layout_marginLeft="@dimen/common4dp"
+                    android:background="@drawable/edit_bg_shape"
+                    android:layout_width="@dimen/common150dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/submit"
+                style="@style/normal_bt_style"
+                android:layout_width="@dimen/common120dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="@dimen/common16dp"
+                android:text="确认"
+                android:textSize="@dimen/text_size_16sp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

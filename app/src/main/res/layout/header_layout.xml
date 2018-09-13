@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:id="@+id/header_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:id="@+id/replace_view"
+        android:visibility="gone"
+        ></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_header_height">
+
+        <ImageView
+            android:id="@+id/left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/header_img_padding"
+            android:paddingRight="@dimen/header_img_padding"
+            android:src="@drawable/reback" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/header_img_padding"
+            android:paddingRight="@dimen/header_img_padding"
+            android:text="保存"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/header_img_padding"
+            android:paddingRight="@dimen/header_img_padding"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:layout_height="@dimen/common2dp"
+        android:background="@color/theme_color"
+        ></View>
+</LinearLayout>

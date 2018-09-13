@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/exit_account"
+        android:background="@drawable/black_square_shape"
+        android:layout_width="match_parent"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/text_size_14sp"
+        android:layout_marginTop="@dimen/common_top_bottom_margin"
+        android:text="退出账号"
+        android:gravity="center"
+        android:layout_height="@dimen/common50dp" />
+</LinearLayout>

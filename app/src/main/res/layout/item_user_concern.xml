@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/white_press_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_marginTop="@dimen/common_top_bottom_margin"
+            android:layout_marginBottom="@dimen/common_top_bottom_margin"
+            android:id="@+id/header"
+            android:src="@drawable/header"
+            android:layout_width="@dimen/common50dp"
+            android:layout_height="@dimen/common50dp" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/common_top_bottom_margin"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_marginRight="@dimen/common_left_right_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_name"
+                style="@style/normal_text_view_title"
+                android:text="奋斗的小蚂蚁"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/common4dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/sex_icon"
+                    android:src="@drawable/woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/age"
+                    style="@style/normal_text_view_content"
+                    android:text="26岁"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/normal_text_view_content"
+                    android:text="上海"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/common4dp"
+                android:drawableLeft="@drawable/renzheng"
+                android:layout_width="match_parent"
+                android:id="@+id/renzheng"
+                android:drawablePadding="@dimen/common6dp"
+                android:textSize="@dimen/text_size_12sp"
+                android:textColor="@color/text_color_gray"
+                android:text="管饭发斯蒂芬斯蒂芬搜索的发顺丰水电费 "
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/common4dp"
+                android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_normal"
+                    android:text="简介"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_marginLeft="@dimen/common2dp"
+                    style="@style/normal_text_view_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:text="见风使舵见风使舵丽芙家居收到了富家大室电缆附件电缆附件代理费今生的"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/Divider"></View>
+
+
+     <LinearLayout
+         android:layout_marginTop="@dimen/common_top_bottom_margin"
+         android:gravity="right"
+         android:layout_marginBottom="@dimen/common_top_bottom_margin"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+         <TextView
+             android:id="@+id/msg_to"
+             android:layout_width="60dp"
+             android:layout_height="wrap_content"
+             android:text="私信"
+             android:gravity="center"
+             android:textSize="@dimen/text_size_12sp"
+             android:layout_marginRight="@dimen/common_left_right_margin"
+             android:textColor="@color/text_color_gray"
+             android:paddingLeft="@dimen/common16dp"
+             android:paddingRight="@dimen/common16dp"
+             android:paddingTop="@dimen/common4dp"
+             android:paddingBottom="@dimen/common4dp"
+             android:background="@drawable/nor_bt_shape_gray_circle"
+             />
+
+         <TextView
+             android:id="@+id/check_goods"
+             android:layout_marginRight="@dimen/common_left_right_margin"
+             android:layout_width="60dp"
+             android:layout_height="wrap_content"
+             android:text="查看商品"
+             android:textSize="@dimen/text_size_12sp"
+             android:gravity="center"
+             android:textColor="@color/text_color_gray"
+             android:paddingTop="@dimen/common4dp"
+             android:paddingBottom="@dimen/common4dp"
+             android:background="@drawable/nor_bt_shape_gray_circle"
+             />
+
+
+
+         <TextView
+             android:id="@+id/quit_concern"
+             android:layout_marginRight="@dimen/common_left_right_margin"
+             android:layout_width="60dp"
+             android:layout_height="wrap_content"
+             android:text="取消关注"
+             android:gravity="center"
+             android:textSize="@dimen/text_size_12sp"
+             android:textColor="@color/text_color_gray"
+             android:paddingTop="@dimen/common4dp"
+             android:paddingBottom="@dimen/common4dp"
+             android:background="@drawable/nor_bt_shape_gray_circle"
+             />
+
+
+     </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.runer.toumai.ui.activity.TpyesProListActivity">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+        <RelativeLayout
+            android:id="@+id/user_liner"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/common70dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/reg_log_bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_color_normal"
+                android:text="注册/登录"
+                android:gravity="center"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="@dimen/common_top_bottom_margin"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/common_top_bottom_margin"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_toRightOf="@id/logo"
+            android:layout_toLeftOf="@id/user_liner"
+            android:layout_width="match_parent"
+            android:drawableRight="@drawable/home_search"
+            android:layout_marginLeft="@dimen/common6dp"
+            android:layout_marginRight="@dimen/common6dp"
+            android:padding="@dimen/common6dp"
+            android:text="输入关键词..."
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/common_top_bottom_margin"
+            android:layout_marginBottom="@dimen/common_top_bottom_margin"
+            android:background="@drawable/search_home_shape"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View style="@style/Divider"></View>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       ></FrameLayout>
+
+
+
+
+</LinearLayout>

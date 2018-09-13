@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="wrap_content">
+
+   <View style="@style/Divider"></View>
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_height="wrap_content">
+
+
+        <View style="@style/VerticalDivider"></View>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="轮次"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_10sp"
+            android:padding="@dimen/common4dp"
+            />
+        <View style="@style/VerticalDivider"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="当前价"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_10sp"
+            android:padding="@dimen/common4dp"
+            />
+        <View style="@style/VerticalDivider"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="一口价"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_10sp"
+            android:padding="@dimen/common4dp"
+            />
+        <View style="@style/VerticalDivider"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:text="（竞价成交）卖家所得"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_10sp"
+            android:padding="@dimen/common4dp"
+            />
+        <View style="@style/VerticalDivider"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:text="（一口价成交）卖家所得"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_10sp"
+            android:padding="@dimen/common4dp"
+            />
+        <View style="@style/VerticalDivider"></View>
+    </LinearLayout>
+
+    <View style="@style/Divider"></View>
+</LinearLayout>

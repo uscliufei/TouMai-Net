@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+   <LinearLayout
+       android:gravity="center"
+       android:background="@color/theme_color"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/common150dp">
+
+       <TextView
+           android:gravity="center"
+           android:text="余额"
+           android:textColor="@color/white"
+           android:textSize="@dimen/text_size_14sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+
+       <TextView
+           android:id="@+id/balance"
+           android:layout_marginTop="@dimen/common_top_bottom_margin"
+           android:gravity="center"
+           android:textSize="@dimen/text_size_20sp"
+           android:textColor="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <LinearLayout
+           android:layout_marginTop="@dimen/common10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/re_charge"
+               android:layout_width="@dimen/common70dp"
+               android:layout_height="wrap_content"
+               android:text="充值"
+               android:layout_marginRight="@dimen/common_top_bottom_margin"
+               android:gravity="center"
+               android:textColor="@color/theme_color"
+               android:paddingTop="@dimen/common6dp"
+               android:paddingBottom="@dimen/common6dp"
+               android:textSize="@dimen/text_size_12sp"
+               android:background="@drawable/white_bt_shape"/>
+           <TextView
+               android:id="@+id/with_draw_cash"
+               android:layout_marginLeft="@dimen/common_left_right_margin"
+               android:layout_width="@dimen/common70dp"
+               android:layout_height="wrap_content"
+               android:text="提现"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:paddingTop="@dimen/common6dp"
+               android:paddingBottom="@dimen/common6dp"
+               android:textSize="@dimen/text_size_12sp"
+               android:background="@drawable/theme_white_r_bt_shape"
+               />
+       </LinearLayout>
+   </LinearLayout>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_marginTop="@dimen/common_top_bottom_margin"
+            android:layout_marginBottom="@dimen/common_top_bottom_margin"
+            android:layout_width="@dimen/common2dp"
+            android:layout_height="@dimen/common20dp"
+            android:background="@color/theme_color"
+            ></View>
+
+         <TextView
+             android:layout_marginLeft="@dimen/common4dp"
+             style="@style/normal_text_view_title"
+             android:textSize="@dimen/text_size_14sp"
+             android:text="@string/wallet_info"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

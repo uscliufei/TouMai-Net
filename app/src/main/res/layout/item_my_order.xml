@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_press_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/common80dp"
+            android:layout_height="@dimen/common80dp"
+            android:layout_marginLeft="@dimen/common_left_right_margin"
+            android:layout_marginTop="@dimen/common_top_bottom_margin"
+            android:src="@drawable/header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common6dp"
+            android:layout_marginRight="@dimen/common_left_right_margin"
+            android:layout_marginTop="@dimen/common_top_bottom_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/normal_text_view_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common4dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/normal_text_view_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common0dp"
+                    android:text="底价:"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/low_price"
+                    style="@style/normal_text_view_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common4dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前价:"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/current_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common10dp"
+                    android:text="出价"
+                    android:drawableLeft="@drawable/paimai"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+                <TextView
+                    android:id="@+id/price_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/text_size_12sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/publish_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common4dp"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/text_size_12sp" />
+
+
+            <TextView
+                android:id="@+id/left_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common6dp"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <LinearLayout
+                android:id="@+id/count_container"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="剩余:"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:textColor="@color/text_color_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common2dp"
+                    />
+
+                <cn.iwgang.countdownview.CountdownView
+                    android:id="@+id/count_down_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/common30dp"
+                    app:isHideTimeBackground="true"
+                    app:isShowDay="true"
+                    app:isShowHour="true"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:isShowMillisecond="false"
+                    app:timeTextColor="@color/text_color_orange"
+                    app:timeTextSize="12sp"
+                    app:isTimeTextBold="false"
+                    app:suffixGravity="center"
+                    app:suffixTextColor="@color/text_color_orange"
+                    app:suffixTextSize="12sp"
+                    app:suffixHour="时"
+                    app:suffixDay="天"
+                    app:suffixMinute="分"
+                    app:suffixSecond="秒"
+                    app:suffixMillisecond="毫秒" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/Divider"
+        android:layout_marginTop="@dimen/common6dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/faq"
+            android:id="@+id/faq_bt"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/common6dp"
+            />
+
+        <TextView
+            android:id="@+id/state_bt"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/common_left_right_margin"
+            android:paddingRight="@dimen/common_left_right_margin"
+            android:layout_height="@dimen/common32dp"
+            android:layout_marginBottom="@dimen/common10dp"
+            android:layout_marginTop="@dimen/common10dp"
+            android:background="@drawable/green_state"
+            android:gravity="center"
+            android:text="明价"
+            android:layout_marginRight="@dimen/common_left_right_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/state_bt2"
+            style="@style/normal_bt_style"
+            android:paddingLeft="@dimen/common_left_right_margin"
+            android:paddingRight="@dimen/common_left_right_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common32dp"
+            android:layout_marginBottom="@dimen/common10dp"
+            android:layout_marginTop="@dimen/common10dp"
+            android:text="申述"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/state_bt3"
+            style="@style/normal_bt_style"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/common_left_right_margin"
+            android:paddingRight="@dimen/common_left_right_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common32dp"
+            android:layout_marginBottom="@dimen/common10dp"
+            android:layout_marginTop="@dimen/common10dp"
+            android:text="申述"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

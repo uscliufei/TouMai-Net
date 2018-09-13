@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:weightSum="10"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <View style="@style/VerticalDivider"></View>
+
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_10sp"
+        android:padding="@dimen/common4dp"
+        />
+    <View style="@style/VerticalDivider"></View>
+    <TextView
+        android:id="@+id/current_price"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_10sp"
+        android:padding="@dimen/common4dp"
+        />
+    <View style="@style/VerticalDivider"></View>
+    <TextView
+        android:id="@+id/one_price"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_10sp"
+        android:padding="@dimen/common4dp"
+        />
+    <View style="@style/VerticalDivider"></View>
+    <TextView
+        android:id="@+id/biding_get"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_10sp"
+        android:padding="@dimen/common4dp"
+        />
+    <View style="@style/VerticalDivider"></View>
+    <TextView
+        android:id="@+id/one_get"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_10sp"
+        android:padding="@dimen/common4dp"
+        />
+    <View style="@style/VerticalDivider"></View>
+</LinearLayout>

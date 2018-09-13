@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.runer.toumai"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 9
+        versionName "1.0.2"
+        renderscriptTargetApi 22
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//Force to configer all versions to one!!!强制统一版本；
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.1'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':liabary')
+    compile project(':runer_net')
+    compile project(':um')
+    compile files('libs/alipaySdk-20170725.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.just.agentweb:agentweb:1.2.4'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.klinkerapps:link_builder:1.6.1'
+    compile 'com.github.iwgang:countdownview:2.1.6'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.github.jineshfrancs:CaptchaImageView:1.0'
+    compile 'com.zzhoujay.richtext:richtext:3.0.0'
+    compile 'com.github.1002326270xc:LayoutManager-FlowLayout:v1.7'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/pgyer_sdk_3.0.0.jar')
+}

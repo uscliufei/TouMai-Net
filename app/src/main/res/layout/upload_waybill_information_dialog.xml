@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/common20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:background="@drawable/dialog_header_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:text="上传运单信息"
+                android:textColor="@color/text_color_orange"
+                android:textSize="@dimen/text_size_16sp" />
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/common_left_right_margin"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bottom_shape"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/common_left_right_margin">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/common16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_marginLeft="@dimen/common2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物流商家："
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_14sp" />
+
+
+                <TextView
+                    android:id="@+id/select_wuliu"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_gray"
+                    android:text="请选择物流商家"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:paddingRight="@dimen/common_left_right_margin"
+                    android:drawablePadding="@dimen/common10dp"
+                    android:background="@drawable/edit_bg_shape"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:layout_width="@dimen/common180dp"
+                    android:layout_height="@dimen/common26dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/common16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="@dimen/common2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运单号：    "
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <EditText
+                    android:id="@+id/express_code"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_gray"
+                    android:hint="输入运单号"
+                    android:inputType="number"
+                    android:textColorHint="@color/text_color_light"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:paddingRight="@dimen/common_left_right_margin"
+                    android:drawablePadding="@dimen/common10dp"
+                    android:background="@drawable/edit_bg_shape"
+                    android:layout_width="@dimen/common180dp"
+                    android:layout_height="@dimen/common26dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/common16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="@dimen/common2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注：         "
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textColor="@color/text_color_gray"
+                    android:hint="输入备注"
+                    android:inputType="number"
+                    android:textColorHint="@color/text_color_light"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:paddingRight="@dimen/common_left_right_margin"
+                    android:drawablePadding="@dimen/common10dp"
+                    android:background="@drawable/edit_bg_shape"
+                    android:layout_width="@dimen/common180dp"
+                    android:layout_height="@dimen/common26dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/submit"
+                style="@style/normal_bt_style"
+                android:layout_width="@dimen/common120dp"
+                android:layout_height="34dp"
+                android:layout_marginBottom="@dimen/common16dp"
+                android:text="确认上传"
+                android:layout_marginTop="@dimen/common_left_right_margin"
+                android:textSize="@dimen/text_size_16sp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

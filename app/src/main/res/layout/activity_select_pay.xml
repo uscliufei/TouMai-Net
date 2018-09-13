@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.runer.toumai.ui.activity.SelectPayActivity">
+
+
+    <include
+        layout="@layout/header_layout"
+        ></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:paddingRight="@dimen/common_left_right_margin"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common120dp">
+
+                <ImageView
+                    android:src="@drawable/header"
+
+                    android:layout_width="@dimen/common90dp"
+                    android:layout_height="@dimen/common90dp" />
+
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common90dp">
+
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/common6dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textColor="@color/text_color_normal"
+                        android:text="香港放价甩都快放假上岛咖啡 房价快速的减肥"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/common6dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color_gray"
+                        android:text="出价金额:￥1190"
+                        android:textSize="@dimen/text_size_16sp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/common_left_right_margin"
+                android:layout_marginRight="@dimen/common_left_right_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用账户余额"
+                    android:button="@null"
+                    android:paddingTop="@dimen/common_top_bottom_margin"
+                    android:paddingBottom="@dimen/common_top_bottom_margin"
+                    android:drawablePadding="@dimen/common6dp"
+                    android:drawableLeft="@drawable/pay_selector"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目前有(￥100.00可用)"
+android:textSize="@dimen/text_size_12sp"
+                    android:textColor="@color/text_color_gray"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    />
+
+            </LinearLayout>
+
+            
+
+
+
+            <RadioGroup
+                android:layout_marginTop="@dimen/common_top_bottom_margin"
+                android:id="@+id/types"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View style="@style/Divider"></View>
+
+                <RadioButton
+                    android:id="@+id/ali_pay"
+                    android:paddingLeft="@dimen/common_left_right_margin"
+                    android:paddingRight="@dimen/common_left_right_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common46dp"
+                    android:drawableLeft="@drawable/pay_ali"
+                    android:button="@null"
+                    android:text="支付宝支付"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_normal"
+                    android:drawablePadding="@dimen/common20dp"
+                    android:drawableRight="@drawable/pay_selector"
+                    />
+                <View style="@style/Divider"></View>
+                <RadioButton
+                    android:id="@+id/wechat_pay"
+                    android:paddingLeft="@dimen/common_left_right_margin"
+                    android:paddingRight="@dimen/common_left_right_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common46dp"
+                    android:drawableLeft="@drawable/pay_wechat"
+                    android:button="@null"
+                    android:text="微信支付"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/text_color_normal"
+                    android:drawablePadding="@dimen/common20dp"
+                    android:drawableRight="@drawable/pay_selector"
+                    />
+            </RadioGroup>
+
+            <View style="@style/Divider"></View>
+
+            <TextView
+                android:text="去支付"
+                android:layout_marginBottom="@dimen/common30dp"
+                style="@style/normal_bt_style" android:layout_marginTop="@dimen/common30dp">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

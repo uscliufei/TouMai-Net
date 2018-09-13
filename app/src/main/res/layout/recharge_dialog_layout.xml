@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common20dp"
+        android:background="@drawable/dialog_bg_shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common46dp"
+                android:background="@drawable/dialog_header_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_left_right_margin"
+                android:text="充值"
+                android:textColor="@color/text_color_orange"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/common_left_right_margin"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bottom_shape"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/common_left_right_margin">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_top_bottom_margin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值金额"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <EditText
+                    android:id="@+id/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common30dp"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:background="@drawable/edit_bg_shape"
+                    android:hint="填入充值的金额"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="@dimen/common6dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_color_light"
+                    android:textSize="@dimen/text_size_14sp" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common46dp"
+                android:layout_marginTop="@dimen/common_left_right_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_ali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sin_check_selector"
+                    android:drawablePadding="@dimen/common4dp"
+                    android:text="支付宝支付"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_left_right_margin"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sin_check_selector"
+                    android:drawablePadding="@dimen/common4dp"
+                    android:text="微信支付"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="@dimen/text_size_14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/submit"
+                style="@style/normal_bt_style"
+                android:layout_width="@dimen/common160dp"
+                android:layout_height="@dimen/common40dp"
+                android:layout_marginBottom="@dimen/common16dp"
+                android:layout_marginTop="@dimen/common20dp"
+                android:text="确定"
+                android:textSize="@dimen/text_size_16sp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
