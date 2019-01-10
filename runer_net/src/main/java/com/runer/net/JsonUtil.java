@@ -36,7 +36,8 @@ import java.util.Map;
  */
 public class JsonUtil {
     public static final String DATE_FORMAT = "yyyy-MM-dd HH:mm";
-    private static final JsonFactory jf = new JsonFactory();
+    private static final JsonFactory
+            jf = new JsonFactory();
 
     static {
         jf.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
